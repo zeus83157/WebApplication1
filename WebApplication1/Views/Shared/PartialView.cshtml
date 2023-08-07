@@ -1,0 +1,12 @@
+﻿@using WebApplication1.Models
+@Html.Script("script",
+    @<script>
+        $(function ()
+        {
+            $("input[type='button']").click(function () {
+                let $this = $(this);
+                let source = $this.attr("data-source");
+                alert(source);
+            });
+        });
+    </script>)

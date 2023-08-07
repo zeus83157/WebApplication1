@@ -1,0 +1,12 @@
+﻿@using WebApplication1.Models
+@{
+    ViewBag.Title = "MainPageA";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MainPageA</h2>
+<input type="button" data-source="From MainPageA" />
+@Html.Partial("PartialView")
+@section scripts{
+    @Html.Script("script")
+}
